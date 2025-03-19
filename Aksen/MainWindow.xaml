@@ -1,0 +1,46 @@
+﻿<Window x:Class="Aksen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Каршеринг" Height="450" Width="800"
+        Background="#F0F0F0">
+    <Grid>
+        <TabControl Margin="10" Background="White" BorderBrush="#CCCCCC" BorderThickness="1">
+            <TabItem Header="Клиенты" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Список клиентов" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <DataGrid x:Name="ClientsGrid" AutoGenerateColumns="True" 
+                              Margin="0" 
+                              BorderBrush="#CCCCCC" 
+                              BorderThickness="1" 
+                              AlternatingRowBackground="#F9F9F9" 
+                              RowBackground="White" 
+                              GridLinesVisibility="Horizontal" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Транспорт" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Список транспорта" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <DataGrid x:Name="TransportGrid" AutoGenerateColumns="True" 
+                              Margin="0" 
+                              BorderBrush="#CCCCCC" 
+                              BorderThickness="1" 
+                              AlternatingRowBackground="#F9F9F9" 
+                              RowBackground="White" 
+                              GridLinesVisibility="Horizontal" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Поездки" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Список поездок" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <DataGrid x:Name="TripsGrid" AutoGenerateColumns="True" 
+                              Margin="0" 
+                              BorderBrush="#CCCCCC" 
+                              BorderThickness="1" 
+                              AlternatingRowBackground="#F9F9F9" 
+                              RowBackground="White" 
+                              GridLinesVisibility="Horizontal" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
